@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<meta name="viewport" content="width=divice-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<meta name="mobile-web-app-capable" content="yes">
+
+		<style>
+			* {
+				margin: 0px;
+				padding: 0px;
+				box-sizing: border-box;
+				flex-basis: 0px;
+			}
+
+			#top {
+				background-color: red;
+				border: 1px solid black;
+				height: 80px;
+				display: flex;
+			}
+
+			#title {
+				color: white;
+				font-size: 5.5vw;
+				text-align: center;
+				line-height: 72px;
+				flex-grow: 5;
+			}
+
+			.title_img {
+				background-repeat: no-repeat;
+				
+				flex-grow: 1.5;
+				
+				height: 100%;
+			}
+
+			.con_title {
+				text-align: center;
+				font-size: 4.5vw;
+				height: 39px;
+				background-color: GhostWhite;
+				line-height: 35px;
+			}
+
+			.con {
+				position: relative;
+				display: flex;
+				border-top: 1px solid lightGray;
+				border-bottom: 1px solid gray;
+				height: 81px;
+			}
+
+			.rank {
+				position: relative;
+				border: 1px solid LightGray;
+				border-radius: 10px;
+				text-align: center;
+				top: 5%;
+				left: 5%;
+				width: 90%;
+				height: 90%;
+				line-height: 65px;
+				font-size: 3.5vw;
+			}
+
+			.cont_img {
+				background-size: 80% 80%;
+				background-repeat: no-repeat;
+				background-position: center;
+				height: 100%;
+			}
+
+			.bar {
+				height: 50%;
+				border: 1px solid gray;
+				margin-top: 20px;
+			}
+
+			.percent {
+				text-align: center;
+				font-size: 3.5vw;
+				line-height: 75px;
+			}
+			
+			.small_flow {
+				flex-grow: 34.9;
+			}
+
+			.bar_flow {
+				flex-grow: 107.96;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="top">
+			<div class="title_img" style="background-image: url('images/three_lines.png'); background-position: 40% 50%; background-size: 44.5% 50%;"></div>
+			<div id="title">인터넷 브라우저 점유율</div>
+			<div class="title_img" style="background-image: url('images/mag_glass.png'); background-position: 59.8% 50%; background-size: 44.5% 50%;"></div>
+		</div>
+
+		<div class="con_title">크 롬</div>
+
+		<div class="con">
+			<div class="small_flow"><div class="rank">1위</div></div>
+			<div class="small_flow"><div class="cont_img" style="background-image: url('images/chrome_icon_256.png');"></div></div>
+			<div class="bar_flow"><div class="bar" style="background-color: yellow; width: 100%;"></div></div>
+			<div class="small_flow"><div class="percent">67%</div></div>
+		</div>
+
+		<div class="con_title">사 파 리</div>
+		<div class="con">
+			<div class="small_flow"><div class="rank">2위</div></div>
+			<div class="small_flow"><div class="cont_img" style="background-image: url('images/safari_icon_256.png')"></div></div>
+			<div class="bar_flow"><div class="bar" style="background-color: rgb(50 210 255); width: 30%;"></div></div>
+			<div class="small_flow"><div class="percent">20%</div></div>
+		</div>
+
+		<div class="con_title">파이어 폭스</div>
+		<div class="con">
+			<div class="small_flow"><div class="rank">3위</div></div>
+			<div class="small_flow"><div class="cont_img" style="background-image: url('images/firefox_icon_256.png')"></div></div>
+			<div class="bar_flow"><div class="bar" style="background-color: rgb(255 150 0); width: 6%;"></div></div>
+			<div class="small_flow"><div class="percent">4%</div></div>
+		</div>
+
+		<div class="con_title">엣 지</div>
+		<div class="con">
+			<div class="small_flow"><div class="rank">4위</div></div>
+			<div class="small_flow"><div class="cont_img" style="background-image: url('images/edge_icon_256.png')"></div></div>
+			<div class="bar_flow"><div class="bar" style="background-color: rgb(20 0 255); width: 6%;"></div></div>
+			<div class="small_flow"><div class="percent">4%</div></div>
+		</div>
+
+		<div class="con_title">삼성 인터넷</div>
+		<div class="con">
+			<div class="small_flow"><div class="rank">5위</div></div>
+			<div class="small_flow"><div class="cont_img" style="background-image: url('images/ss_internet_icon_256.png')"></div></div>
+			<div class="bar_flow"><div class="bar" style="background-color: rgb(135 145 255); width: 5.5%"></div></div>
+			<div class="small_flow"><div class="percent">3%</div></div>
+		</div>
+
+		<div class="con_title">오 페 라</div>
+		<div class="con">
+			<div class="small_flow"><div class="rank">6위</div></div>
+			<div class="small_flow"><div class="cont_img" style="background-image: url('images/opera_icon_256.png')"></div></div>
+			<div class="bar_flow"><div class="bar" style="background-color: red; width: 5%"></div></div>
+			<div class="small_flow"><div class="percent">2%</div></div>
+		</div>
+
+		<div class="con_title">그밖에</div>
+		<div class="con">
+			<div class="small_flow"><div class="rank">7위</div></div>
+			<div class="small_flow"><div class="cont_img" style="background-image: url('images/else_256.png')"></div></div>
+			<div class="bar_flow"><div class="bar" style="background-color: gray; width: 2%"></div></div>
+			<div class="small_flow"><div class="percent">1%</div></div>
+		</div>
+	</body>
+</html>
